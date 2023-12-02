@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="icon" href="image/MG_Logo2.ico" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script> 这一段引用必须要加在这里不然js代码就无效 -->
+		<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
+		<link rel="stylesheet" href="./css/index.css">
+		<script src="./js/index.js"></script>
+		<title>Login to MG</title>
+		<style>
+			.azure{
+				color:rgb(0, 255, 255);
+				font-size:13px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 用户登录界面 -->
+		<div class="login">
+			<h2>MG User login</h2>
+			<div class="login_box">
+				<input type="text" id='name' maxlength='20'/>
+				<label for="name">Account</label>
+			</div>
+			<div class="login_box">
+				<input type="password" id='pwd' maxlength='20'>
+				<label for="pwd">Password</label>
+			</div>
+			<div>
+				<label>
+					<input type="checkbox" name="" id="check" class="hidden" onchange="boxChange(this)"><span class="azure">Automatically skip login five times</span>
+					<i class="check" ></i>
+				</label>
+			</div>
+			<a class="login-a">Login<span></span><span></span><span></span><span></span></a>
+			<a class="enroll-a">Register<span></span><span></span><span></span><span></span></a>
+		</div>
+		
+		<!-- 用户注册界面 -->
+		<div class="login enroll" style="display: none;">
+			<h2>User register</h2>
+			<div class="login_box">
+				<input type="text" id="name1" maxlength='20'/>
+				<label for="name">Registered account</label>
+			</div>
+			<div class="login_box">
+				<input type="password" id="pwd1" maxlength='20'>
+				<label for="pwd">Register password</label>
+			</div>
+			<a class="login-b">Login<span></span><span></span><span></span><span></span></a>
+			<a class="enroll-b">Register<span></span><span></span><span></span><span></span></a>
+		</div>
+	</body>
+</html>
