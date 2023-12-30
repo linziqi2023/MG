@@ -6,8 +6,8 @@ function go(){
     x--;
     if(x>0){
         document.getElementById("sp").innerHTML=x;
-    }else{
         alert("确认支付")
+    }else{
         location.href='success_MG_books.html';
     }
 }
